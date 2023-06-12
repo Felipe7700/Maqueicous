@@ -1,23 +1,41 @@
 body {
     margin: 0;
+
 }
 
 body * {
     box-sizing: border-box;
+    
 }
 
 .titulo_1{
-    width: 150%;
+    width: 100%;
+    text-align: center;
+    position: relative;
     justify-content: center;
-    display: flex;
-    margin-bottom: 5%;
-    font-size:  50px;
+    display: block;
+    margin-bottom: 0%;
+    margin-top: 0%;
+    box-sizing: border-box;
+    font-size:  70px;
     color: #FFFF00;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    background-image: url("/Maqueicous-main/maq.jpg")
+   
+
 }
 .main {
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
+    background: #B16C47;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.main_cadastro{
+    width: 100vw;
+    min-height: 100vh;
     background: #B16C47;
     display: flex;
     justify-content: center;
@@ -75,6 +93,7 @@ body * {
     color: #8D4925;
 }
 
+
 .btn-login {
     width: 60%;
     padding: 16px 0px;
@@ -88,21 +107,21 @@ body * {
     color: #FFFF00;
     background: #8D4925;
     cursor: pointer;
-    box-shadow: 0px 18px 40px -12px #B16C47;
+    box-shadow: 0px 18px 40px -12px #ffffff;
 }
 
 #botao-entrar {
     border: none;
     outline: none;
     text-transform: uppercase;
-    font-weight: 800;
-    letter-spacing: 3px;
+    font-weight: 900;
+    letter-spacing: 5px;
     color: #FFFF00;
     background: #8D4925;
     cursor: pointer;
 }
 
-.btn-cad {
+.btn-cad{
     width: auto;
     padding: 16px 0px;
     margin: 25px;
@@ -110,12 +129,12 @@ body * {
     border-radius: 100px;
     outline: none;
     text-transform: uppercase;
-    font-weight: 800;
-    letter-spacing: 3px;
+    font-weight: 900;
+    letter-spacing: 5px;
     color: #FFFF00;
     background: #8D4925;
     cursor: pointer;
-    box-shadow: 0px 18px 40px -12px #B16C47;
+    box-shadow: 0px 18px 40px -12px #ffffff;
 }
 
 .btn-cad a {
@@ -123,38 +142,43 @@ body * {
     color: #FFFF00;
 }
 
-.btn-empresa :hover {
-    width: 15%;
-    padding: 16px 16px;
+.btn-empresa{
+    width: 110%;
+    padding: 14px 14px;
     margin: 25px;
     border: none;
-    border-radius: 3px;
+    border-radius: 2px;
     outline: none;
     text-transform: uppercase;
     font-weight: 800;
-    letter-spacing: 3px;
-    background: #8D4925;
+    letter-spacing: 5px;
+    background: whitesmoke;
     cursor: pointer;
+    margin-top: 0%;
+   
+    
+    
+    box-shadow: 0px 18px 40px -12px #B16C47;
+}
+.btn-estagiario{
+    
+    width: 110%;
+    padding: 14px 14px;
+    margin: 25px;
+    border: none;
+    border-radius: 2px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 5px;
+    background: whitesmoke;
+    cursor: pointer;
+    margin-top: 0%;
     
     box-shadow: 0px 18px 40px -12px #B16C47;
 }
 
-.btn-estagiario :hover {
-    
-    width: 15%;
-    padding: 16px 16px;
-    margin: 25px;
-    border: none;
-    border-radius: 3px;
-    outline: none;
-    text-transform: uppercase;
-    font-weight: 800;
-    letter-spacing: 3px;
-    background: #8D4925;
-    cursor: pointer;
-    box-shadow: 0px 18px 40px -12px #B16C47;
-}
-
+  
 
 @media only screen and (max-width: 950px){
     .card{
@@ -175,5 +199,7 @@ body * {
         width: 90%;
     }
 }
+
+
 
 
