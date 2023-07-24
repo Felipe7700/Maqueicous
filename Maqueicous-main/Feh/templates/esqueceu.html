@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/style_esqueceu.css">
+    <title>esqueceu_senha</title>
+</head>
+<body>
+    <div class="main">
+        <form action="/esqueceu_senha", method="post">
+            <div class="card">
+                <h1><strong>Adicione sua nova senha</strong></h1>
+            <div class="textfield">
+                <label for="email">Usuario:</label>
+                <input type="text" name="email" placeholder="Digite o seu e-mail">
+            </div>
+            <div class="textfield">
+                <label for="nova_senha">Nova Senha:</label>
+                <input type="password" name="nova_senha" placeholder="Digite a sua nova senha">
+            </div>
+            <div class="textfield">
+                <label for="conf_senha">Confirmação de Senha:</label>
+                <input type="password" name="conf_senha" placeholder="Confirme a sua nova senha">
+            </div>
+            <button class="btn-cad_esq" type="submit">
+                <input type="submit" value="enviar" id="botao-entrar">
+            </button>
+            </div>
+    </form>
+    {% set messages = get_flashed_messages() %}
+                {% if messages %}
+                    {% for msg in messages %}
+                        <h2>{{msg}}</h2>
+                    {% endfor %}
+                {% endif %}
+    </div>
+</body>
+</html>
