@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/style_cadastro.css">
+    <title>cadastro_esta</title>
+    <script>
+        function mascara_cre() {
+            var cre = document.getElementById('cre')
+            if (cre.value.length == 2) {
+                cre.value += "."
+        }
+    }
+    </script>
+</head>
+<body>
+    <div class="main">
+        <div class="card">
+            <h1>Cadastre-se <br> Novo Estagiário</h1>
+            <form action="/cadastro_esta" method="post">
+                <div class="textfield">
+                    <label for="nome">nome:</label>
+                    <input type="text" name="nome" placeholder="Digite o seu nome">
+                </div>
+                <div class="textfield">
+                    <label for="data_nasc">Data de Nascimento:</label>
+                    <input id="date" type="date" name="data_nasc" placeholder="DD/MM/AA">
+                </div>
+                <div class="textfield">
+                    <label for="cpf">CPF:</label>
+                    <script src="js/scripts_cpf.js"></script>
+                    <input id="cpf" type="text" autocomplete="off" placeholder="000.000.000-00" onkeyup="isCPF()">
+                </div>
+                <div class="textfield">
+                    <label for="e-mail_acad">E-mail Academico:</label>
+                    <input id="email" type="email" name="e-mail_acad" placeholder="Digite o seu e-mail academico">
+                </div>
+                <div class="textfield">
+                    <label for="senha">Senha:</label>
+                    <input id="senha" type="password" name="senha" placeholder="Digite a sua senha">
+                </div>
+                <div class="textfield">
+                    <label for="cidade">Cidade:</label>
+                    <input id="cidade" type="text" name="cidade" placeholder="Digite a sua cidade">
+                </div>
+                <div class="textfield">
+                    <label for="estado">Estado:</label>
+                    <input id="estado" type="text" name="estado" placeholder="Digite o seu estado">
+                </div>
+                <div class="textfield">
+                    <label for="bairro">Bairro:</label>
+                    <input id="bairro" type="text" name="bairro" placeholder="Digite o seu bairro">
+                </div>
+                <div class="textfield">
+                    <label for="telefone">Telefone:</label>
+                    <input id="phone_with_ddd" type="tel" name="telefone" placeholder="(00) 00000-000">
+                </div>
+                <div class="textfield">
+                    <label for="cep">cep:</label>
+                    <input id="cep" type="text" name="cep" placeholder="00000-000">
+                </div>
+                <div class="textfield">
+                    <label for="campus">campus:</label>
+                    <input id="campus" type="text" name="campus" placeholder="Digite o seu campus">
+                </div>
+                <div class="textfield">
+                    <label for="cre">CRE:</label>
+                    <input id="cre" type="text" name="cre" maxlength="4" placeholder="00.0" onkeyup="mascara_cre()">
+                </div>
+                <div class="textfield">
+                    <label for="area">Área:</label>
+                    <input id="area" type="text" name="area" placeholder="Digite a sua área de atuação">
+                </div>
+                <div class="textfield">
+                    <label for="curriculo">Curriculo:</label>
+                    <input id="curriculo" type="file" name="curriculo">
+                </div>
+                <button class="btn">Cadastre-se</button>
+            </form>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.js"></script>
+    <script>
+        $('#phone_with_ddd').mask('(00) 0000-0000');
+        $('#cpf').mask('000.000.000-00', {reverse: true});
+        $('#cep').mask('00000-000');
+    </script>
+</body>
+</html>

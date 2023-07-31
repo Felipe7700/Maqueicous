@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/style_cadastro.css">
+    <title>cadastro_empr</title>
+</head>
+<body>
+    <div class="main">
+        <div class="card">
+            <h1><strong>Cadastre-se</strong> <br> nova empresa</h1>
+
+            <form action="/cadastro_emp" method="post">
+                <div class="textfield">
+                <label for="nome">nome:</label>
+                <input id="name" type="text" name="nome" placeholder="Digite o seu nome">
+            </div>
+            <div class="textfield">
+                <label for="cnpj">CNPJ:</label>
+                <script src="js/scripts_cnpj.js"></script>
+                <input id="cnpj" type="text" autocomplete="off" placeholder="00.000.000/0000-00" onkeyup="validaCnpj()">
+            </div>
+            <div class="textfield">
+                <label for="e-mail">E-mail:</label>
+                <input id="email" type="email" name="e-mail" placeholder="Digite o seu e-mail">
+            </div>
+            <div class="textfield">
+                <label for="senha">Senha:</label>
+                <input id="senha" type="password" name="senha" placeholder="Digite a sua senha">
+            </div>
+            <div class="textfield">
+                <label for="cidade">Cidade:</label>
+                <input id="cidade" type="text" name="cidade" placeholder="Digite a sua cidade">
+            </div>
+            <div class="textfield">
+                <label for="estado">Estado:</label>
+                <input id="estado" type="text" name="estado" placeholder="Digite o seu estado">
+            </div>
+            <div class="textfield">
+                <label for="bairro">Bairro:</label>
+                <input id="bairro" type="text" name="bairro" placeholder="Digite o seu bairro">
+            </div>
+            <div class="textfield">
+                <label for="telefone">Telefone:</label>
+                <input id="phone_with_ddd" type="text" name="telefone" placeholder="(00) 0000-0000">
+            </div>
+            <div class="textfield">
+                <label for="cep">cep:</label>
+                <input id="cep" type="text" name="cep" placeholder="00000-000">
+            </div>
+            <div class="textfield">
+                <label for="desc">Descrição dos Certificados e Premiações (se tiver):</label>
+                <input id="desc" type="text" name="desc" placeholder="Descreva de forma resumida a sua empresa">
+            </div>
+            <div class="textfield">
+                <label for="cert_prem">Certificados e Premiações:</label>
+                <input id="cert_prem" type="file" name="cert_prem">
+            </div>
+            <button class="btn" type="submit">Cadastre-se</button>
+            </form>
+
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.js"></script>
+    <script>
+        $('#phone_with_ddd').mask('(00) 0000-0000');
+        $('#cnpj').mask('00.000.000/0000-00', {reverse: true});
+        $('#cep').mask('00000-000');
+    </script>
+</body>
+</html>
