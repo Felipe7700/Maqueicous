@@ -78,7 +78,7 @@ body * {
     display: block;
     margin-right: auto;
     margin-left: auto;
-    width: auto;
+    width: 200px; /* Adjust the width as desired */
     padding: 20px 10px;
     margin: 25px;
     border: none;
