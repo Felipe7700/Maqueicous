@@ -1,9 +1,12 @@
 import json
 dados = {
-    "aluno":"1234",
-    "aluno2":"1357",
-    "aluno3":"2468"
-}
+    "Renan": "1234", 
+    "Emilly": "1357",
+    "Eduarda": "2468",
+    "Felipe": "3425"
+     
+     }
+
 arquivo = open("arquivo.json", "w")
 arquivo.write(json.dumps(dados))
 
