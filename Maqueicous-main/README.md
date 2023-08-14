@@ -1,2 +1,0 @@
-# Maqueicous
-Projetin de Ednaldo
