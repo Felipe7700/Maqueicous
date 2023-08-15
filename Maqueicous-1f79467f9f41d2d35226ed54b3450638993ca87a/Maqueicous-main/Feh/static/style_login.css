@@ -13,6 +13,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: 'Poppins', comic sans;
 }
 
 .card {
@@ -27,6 +28,8 @@ body {
     border-radius: 20px;
     box-shadow: 0px 18px 40px rgba(0, 0, 0, 0.2);
     text-align: center; /* Center the content inside the card */
+    font-family: 'Poppins', comic sans;
+
 }
 .card h1,
 .card h2 {
@@ -102,7 +105,7 @@ body {
 .btn-cad_emp {
     color: #ebe7e6;
     background: transparent;
-    border: 3px solid #FFD700;
+    border: 2px solid #FFD700;
     padding: 12px;
     width: 200px; /* Ajuste a largura do botão */
     text-align: center;
@@ -115,14 +118,14 @@ body {
 
 .btn-cad_emp a {
     text-decoration: none;
-    color: rgb(199, 202, 32);
+    color: rgb(247, 247, 243);
     font-weight: bold;
 }
 
 .btn-cad_emp:hover,
 .btn-cad_emp:focus { 
     color: #ffd900;
-    background: #6e6e6e;
+    background: #ffd900;
     opacity: 0.9; /* Ajuste a opacidade */
     transform: scale(1.05);
 }
@@ -143,25 +146,24 @@ body {
 
 .btn-cad_estag a {
     text-decoration: none;
-    color: rgb(199, 202, 32);
+    color: rgb(247, 247, 247);
     font-weight: bold;
 }
 
 .btn-cad_estag:hover,
 .btn-cad_estag:focus { 
     color: #ffd900;
-    background: #6e6e6e;
+    background: #ffd900;
     opacity: 0.9; /* Ajuste a opacidade */
     transform: scale(1.05);
 }
 .btn-cad_esq {
     color: #ebe7e6;
     background: transparent;
-    border: 3px solid #FFD700;
+    border: 2px solid #FFD700;
     padding-bottom: 60px;
     padding-top: 20px;
     border-radius: 20px;
-    box-shadow: 0px 0px 10px 2px #d8d7d7;
     transition: .35s;
     cursor: pointer;
     padding: 12px;
@@ -177,7 +179,7 @@ body {
 .btn-cad_esq:hover,
 .btn-cad_esq:focus { 
     color: #ffd900;
-    background: #6e6e6e;
+    background: #ffd900;
     opacity: 4;
     transform: scale(0.9);
 }
@@ -212,6 +214,10 @@ body {
 .espaco{
     padding: 5px;
 }
+
+
+
+
 
 
 
