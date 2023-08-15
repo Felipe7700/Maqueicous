@@ -60,7 +60,7 @@ def cada_esta():
 def cada_emp():
     if session.get("logado",None):
         return redirect(url_for("escolha"))
-    return render_template("cadastro2.html")
+    return render_template("cadastro1.html")
 
 
 if __name__=="__main__":
