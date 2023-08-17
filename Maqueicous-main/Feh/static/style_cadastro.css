@@ -1,0 +1,134 @@
+body {
+    margin: 0;
+}
+
+/* Utilizar o box-sizing:border-box para melhorar o cálculo do tamanho dos elementos */
+body * {
+    box-sizing: border-box;
+}
+
+/* Estilos para a seção principal */
+.main {
+    position: center;
+    width: 100vw;
+    height: 300vh;
+    background: #444442;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', comic sans;
+
+/* Estilos para o cartão */
+.card {
+    width: 70%;
+    background: #000000;
+    flex-direction: column;
+    padding: 30px 35px;
+    border-radius: 20px;
+    box-shadow: 0px 18px 40px #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilos para os títulos do cartão */
+.card > h1 {
+    color: #FFFF00;
+    font-weight: 800;
+    margin: 0;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card > h2 {
+    color: #FFFF00;
+    font-weight: 500; /* Alterado para 500 para ser mais semântico */
+    margin: 0; /* Removido "none" que não é uma propriedade válida */
+}
+
+/* Estilos para os campos de entrada */
+.textfield {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 15px 0; /* Aumentado o espaçamento vertical */
+}
+
+.textfield > input {
+    width: 80%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background: #444442;
+    color: #FFFF00;
+    font-size: 12pt;
+    box-shadow: 0px 10px 48px #444442;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.textfield > label {
+    color: #FFFF00;
+    margin-bottom: 10px;
+}
+
+.textfield > input::placeholder {
+    color: #FFFF00;
+}
+
+/* Estilos para os botões */
+.btn {
+    display: block;
+    text-align: center; /* Adicionado para alinhar o texto do botão ao centro */
+    width: 60%;
+    padding: 16px 0px;
+    margin: 25px auto; /* Removido margin-right e margin-left, e centralizado verticalmente com "auto" */
+    border: none;
+    border-radius: 100px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color: #000000;
+    background: #444442;
+    cursor: pointer;
+    box-shadow: 0px 18px 40px -12px #444442;
+    transition: transform 200ms ease-in-out;
+}
+
+.btn > a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    background: #FFFF00;
+    color: #000000;
+}
+
+/* Media queries para responsividade */
+@media only screen and (max-width: 950px) {
+    .card {
+        width: 85%;
+    }    
+}
+
+@media only screen and (max-width: 600px) {
+    .main {
+        flex-direction: column;
+    }
+
+    .card > h1 {
+        display: none;
+    }
+
+    .card {
+        width: 90%;
+    }
+}
+    .card {
+        width: 90%;
+    }
+}
