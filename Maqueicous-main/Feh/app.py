@@ -78,5 +78,19 @@ def login():
     
     return render_template ("teste.html", form = form) #form=form está passando a instância do formulário para a página HTML para que ela possa exibir o formulário e interagir com os dados enviados pelo usuário.
 
+
+@app.route("/catalogo")
+def catalogo():
+    if session.get("Usuario",None):
+        return render_template("catalogo_empr.html")
+    flash("Faça o login!")
+    return redirect(url_for("login"))
+
+@app.route("/escolha")
+def escolha():
+    return render_template("escolha.html")
+
+
 if __name__=='__main__':
     app.run(debug=False)
+
