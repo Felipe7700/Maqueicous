@@ -18,7 +18,9 @@
             
             <div class="right-lg">
                 <div class="card-lg">
-                    <button class="Cad-g">Cadastre-se</button>
+                    <div>
+                        <a class="link-cada" href="{{url_for('escolha')}}">Cadastre-se aqui</a>
+                     </div>
                     <h1>LOGIN</h1>
                     <div class="textfield">
                         <label for="Usuário">Usuário</label>
@@ -36,15 +38,18 @@
                 {% with messages = get_flashed_messages() %}
                 {% if messages %}
                     {% for msg in messages %}
-                        <h2>{{msg}}</h2>
+                        <div class="flash">
+                            <h2>{{msg}}</h2>
+                        </div>
                     {% endfor %}
                 {% endif %}
                 {% endwith %}
                 </form>
-                <a href="/esqueceu" class= "esque-senha" target="_blank">Esqueceu a sua senha?</a></button>
+              
                 </div>
             </div>
         </div>
     </div>
 </body>
 </html>
+
